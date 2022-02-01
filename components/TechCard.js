@@ -8,9 +8,9 @@ export default function TechCard({array,projectPage=false}) {
   let componentClass='text-slate-500 hover:text-black flex flex-col text-gre items-center gap-y-4 text-xl'
   return (
     <div className={classname}>
-    {array.map(({name,component})=>{
+    {array.map(({name,component},index)=>{
       return(
-      <div className={componentClass}>
+      <div key={index} className={componentClass}>
         <h3 >
           {!projectPage && name  }</h3> 
           <div className={styles.svg}>

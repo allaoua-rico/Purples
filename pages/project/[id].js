@@ -67,9 +67,9 @@ export default function Project({data}) {
             
             <p className={styles.description}>{data.description}</p>
             <ul className='list-disc mb-14'>
-            {data.fctList.map((fct)=>{
+            {data.fctList.map((fct,index)=>{
             return(
-                <li>
+                <li key={index}>
                   {fct}
                 </li>)
               })}

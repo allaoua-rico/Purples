@@ -35,9 +35,9 @@ export default function Carousel({hidden=false,array}) {
               justifyContent: 'center'
               }}
           >
-              {array.map(({name,component})=>{
+              {array.map(({name,component},index)=>{
                 return(
-                  <div className='flex flex-col text-3xl justify-center p-5 items-center gap-y-4'>
+                  <div key={index} className='flex flex-col text-3xl justify-center p-5 items-center gap-y-4'>
                     <h3>{name}</h3>
                     <div className={styles.svg_big}>
                     {component}
