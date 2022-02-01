@@ -69,7 +69,7 @@ export default function Project({data}) {
                 </li>)
               })}
             </ul>
-            <ul className='mb-12'>
+            <ul className='mb-8'>
             <h3 className='text-4xl mb-6'>Technologies used</h3>
             <div className={styles.card}>
             <TechCard projectPage={true} array={filteredFront}/>
@@ -82,14 +82,25 @@ export default function Project({data}) {
 
             </ul>
           </div>
+          <div className=' flex flex-col gap-y-4 mb-8'>
+
+          <div className='text-center '>To test the admin functionalities, go to the /login page and use:</div>
+          <div className='flex flex-col items-center'>
+            <div>email:test@gmail</div>
+            <div>pasword:pasword</div>
+          </div>
+
+          </div>
+   
+
               <div className='flex w-full justify-center gap-x-6'>
-                <Link passHref href={'https://github.com/allaoua-rico/Full-House-Project'}>
+                <Link passHref href={'https://github.com/allaoua-rico/full-house-heroku'}>
                   <a className="hover:cursor-pointer hover:bg-white bg-neutral-200  font-semibold py-2 px-4 border border-gray-400 rounded shadow">
                             Github
                     </a>
                   
                 </Link>
-                <Link passHref href={'/'}>
+                <Link passHref href={'https://full-house-heroku.herokuapp.com/'}>
                 <a className="hover:cursor-pointer hover:bg-white bg-neutral-200 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
                   Live
                 </a>
