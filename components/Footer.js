@@ -5,7 +5,7 @@ import Facebook from '../public/svg/Facebook'
 
 export default function Footer() {
   return (<div className='h-28 mt-10 flex justify-center items-center gap-x-5' style={{background:'#324766',width:'100%'}}>
-      <Link passHref href='https://www.linkedin.com/in/allaoua-boudriou-736569208/'>
+      <Link passHref href='https://github.com/allaoua-rico/Portfolio'>
           <a className='hover:cursor-pointer hover:fill-white'><LinkedIn/></a>
         
       </Link>
