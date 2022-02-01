@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <Layout>
       <Head >
-        <title>AB's Portfolio</title>
+        <title>AB&apos;s Portfolio</title>
         <meta name="description" content="BOUDRIOU ALLAOUA's Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

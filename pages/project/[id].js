@@ -88,16 +88,16 @@ export default function Project({data}) {
             </ul>
           </div>
               <div className='flex w-full justify-center gap-x-6'>
-                <Link href={'/'}>
-                  <div className="hover:cursor-pointer hover:bg-white bg-neutral-200  font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+                <Link passHref href={'/'}>
+                  <a className="hover:cursor-pointer hover:bg-white bg-neutral-200  font-semibold py-2 px-4 border border-gray-400 rounded shadow">
                             Github
-                    </div>
+                    </a>
                   
                 </Link>
-                <Link href={'/'}>
-                <div className="hover:cursor-pointer hover:bg-white bg-neutral-200 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+                <Link passHref href={'/'}>
+                <a className="hover:cursor-pointer hover:bg-white bg-neutral-200 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
                   Live
-                </div>
+                </a>
                 </Link>
               </div>
         </div>

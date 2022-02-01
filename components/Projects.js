@@ -12,18 +12,18 @@ export default function Projects() {
                 <div className='flex flex-col items-center gap-y-5'>
                 <h3 className='text-2xl'>Fullhouse Deco</h3>
 
-                <Link href={'/project/fullhouse'}>
-                    <div className='hover:cursor-pointer'>
+                <Link passHref href={'/project/fullhouse'}>
+                    <a className='hover:cursor-pointer'>
                         <img src="/fullhouse_home_page1.png"/>
-                    </div>
+                    </a>
              
                 </Link>
-                    <Link href={'/project/fullhouse'}>
-                        <button
+                    <Link passHref href={'/project/fullhouse'}>
+                        <a
                         className=" hover:bg-gray-700 sm:text-xl text-3xl font-semibold py-2 px-4 border border-gray-400 rounded shadow"
                         color='primary' variant="outlined">
                             Details
-                        </button>
+                        </a>
                     </Link>
                 </div>
       

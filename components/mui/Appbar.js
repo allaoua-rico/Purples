@@ -73,7 +73,7 @@ const ResponsiveAppBar = () => {
               component="div"
               sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
               >
-                    <Link href='#top' >
+                    <Link passHref href='#top' >
                       <a className="ml-3">
                       My Portfolio
                       </a>
@@ -115,7 +115,7 @@ const ResponsiveAppBar = () => {
                   onClick={handleCloseNavMenu}
                   >
                     <Typography textAlign="center">
-                        <Link href={'#'+page}>
+                        <Link passHref href={'#'+page}>
                           <a >
                               {sections[index]}
                           </a>
@@ -141,7 +141,7 @@ const ResponsiveAppBar = () => {
             {bookmarks.map((page,index) => (
                   <div key={page} className='mx-2'>
                     <Typography textAlign="center">
-                        <Link href={'#'+page}>
+                        <Link passHref href={'#'+page}>
                           <a >
                               {sections[index]}
                           </a>
