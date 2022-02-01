@@ -14,11 +14,6 @@ export async function getStaticPaths() {
       params: {
         id: 'fullhouse'
       }
-    },
-    {
-      params: {
-        id: 'amazon-clone'
-      }
     }
   ];
   return {
