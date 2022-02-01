@@ -25,7 +25,7 @@ export const Contact = () => {
             <div className='sm:flex gap-x-8 mx-6'>
                 <div className='basis-1/2'>
                     <TextField
-                    required
+                    required={true}
                     placeholder="Enter Your Name"
                     label="Name"
                     name="name"
@@ -36,7 +36,7 @@ export const Contact = () => {
            
                 <div className='basis-1/2'>
                     <TextField
-                    required
+                    required={true}
                     placeholder="Enter Your Email"
                     label="Email"
                     name="email"
@@ -48,7 +48,7 @@ export const Contact = () => {
             </div>
             <div className=' mx-6 '>
                 <TextField
-                required
+                required={true}
                 placeholder="Message"
                 name="message"
                 label="message"
