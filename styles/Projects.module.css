@@ -1,0 +1,42 @@
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color:  #323a45 ;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  /* width:auto; */
+  transition: color 0.15s ease, border-color 0.15s ease;
+  /* max-width: 300px; */
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  background:rgba(255,255,255,0.5);
+
+  color: #fff;
+  border-color: #fff ;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}

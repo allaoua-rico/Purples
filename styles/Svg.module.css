@@ -1,0 +1,11 @@
+.svg:hover{
+    transform:scale(1.2);
+}
+.svg{
+   transition: all 0.45s ease-in-out;
+
+}
+.svg_big{
+    transform:scale(1.3);
+
+}
