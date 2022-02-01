@@ -83,7 +83,7 @@ export default function Project({data}) {
             </ul>
           </div>
               <div className='flex w-full justify-center gap-x-6'>
-                <Link passHref href={'/'}>
+                <Link passHref href={'https://github.com/allaoua-rico/Full-House-Project'}>
                   <a className="hover:cursor-pointer hover:bg-white bg-neutral-200  font-semibold py-2 px-4 border border-gray-400 rounded shadow">
                             Github
                     </a>
