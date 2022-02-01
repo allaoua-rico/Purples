@@ -6,7 +6,6 @@ import Projects from '../components/Projects.js'
 import Top from '../components/Top'
 import styles from '../styles/Home.module.css'
 import Layout from '../components/Layout'
-import { send } from 'emailjs-com';
 import {Contact} from '../components/Contact'
 import Footer from '../components/Footer'
 
