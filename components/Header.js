@@ -48,10 +48,10 @@ const Header = () => {
   function HideOnScroll(props) {
     const { children} = props;
     // if on desk the scroll trigger will be false so the Slide transition won't happen
-    const trigger = matches ? false :useScrollTrigger();
+    const trigger = useScrollTrigger();
     console.log(matches)
     return (
-      <Slide appear={false} direction="down" in={!trigger}>
+      <Slide appear={false} direction="down" in={matches ? true : !trigger}>
         {children}
       </Slide>
     );
