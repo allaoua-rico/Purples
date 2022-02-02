@@ -8,6 +8,8 @@ import styles from '../styles/Home.module.css'
 import Layout from '../components/Layout'
 import {Contact} from '../components/Contact'
 import Footer from '../components/Footer'
+import FadeInSection from '../components/FadeInSection'
+
 
 export default function Home() {
   return (
@@ -23,12 +25,17 @@ export default function Home() {
     <div className='w-full flex flex-col items-center'>
       
       <Top />
-      <hr id="tech" className='h-3 w-20 rounded-lg bg-gray-300 mb-12 mx-auto '/>
+      <hr id="tech" className='h-3 w-20 rounded-lg bg-gray-300 mb-12 mt-40 mx-auto '/>
       <Technologies/>
-      <hr id="projects" className='h-3 w-20 rounded-lg bg-gray-300 mb-12 mt-10 mx-auto'/>
-      <Projects/>
-      <hr id="contact" className='h-3 w-20 rounded-lg bg-gray-300 mb-12 mt-10 mx-auto'/>
-      <Contact/>
+      <FadeInSection>
+        <hr id="projects" className='h-3 w-20 rounded-lg bg-gray-300 mb-12 mt-40 mx-auto'/>
+        <Projects/>
+      </FadeInSection>
+      <FadeInSection>
+        <hr id="contact" className='h-3 w-20 rounded-lg bg-gray-300 mb-12 mt-40 mx-auto'/>
+        <Contact/>
+      </FadeInSection>
+
     </div>
     <Footer>
 
