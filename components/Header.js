@@ -16,6 +16,9 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Slide from '@mui/material/Slide';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import Divider from '@mui/material/Divider';
+import MenuList from '@mui/material/MenuList';
+import {  ThemeProvider, createTheme } from '@mui/material/styles';
 
 const bookmarks = [ 'tech', 'projects', 'contact'];
 const sections = ['Technologies', 'Projects', 'Contact'];
@@ -31,13 +34,20 @@ const Header = () => {
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
+    // console.log(event.target)
+
     setAnchorElNav(event.currentTarget);
   };
   // const handleOpenUserMenu = (event) => {
-  //   setAnchorElUser(event.currentTarget);
+    //   setAnchorElUser(event.currentTarget);
   // };
+  const darkTheme = createTheme({
+    palette: {
+      mode: 'dark',
+    },
+  });
 
-  const handleCloseNavMenu = () => {
+  const handleCloseNavMenu = () => { 
     setAnchorElNav(null);
   };
 
@@ -49,25 +59,25 @@ const Header = () => {
     const { children} = props;
     // if on desk the scroll trigger will be false so the Slide transition won't happen
     const trigger = useScrollTrigger();
-    console.log(matches)
+    // console.log(matches)
     return (
       <Slide appear={false} direction="down" in={matches ? true : !trigger}>
         {children}
       </Slide>
     );
   }
-  
   // HideOnScroll.propTypes = {
   //   children: PropTypes.element.isRequired,
   //   window: PropTypes.func,
   // };
 
   return (
+    <ThemeProvider theme={darkTheme}>
     <HideOnScroll >
     <AppBar position="fixed" style={{background:'#324766',width:'100%'}} id='top' >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-        <div className="flex justify-between w-full items-center" >
+        <div className="flex justify-between w-full items-center p-3" >
           <div>
             <Typography
               variant="h6"
@@ -94,6 +104,7 @@ const Header = () => {
                 <MenuIcon />
               </IconButton>
               <Menu
+              
                 id="menu-appbar"
                 anchorEl={anchorElNav}
                 anchorOrigin={{
@@ -108,13 +119,21 @@ const Header = () => {
                 open={Boolean(anchorElNav)}
                 onClose={handleCloseNavMenu}
                 sx={{
+                  // pr:0,
+                  // background:'grey',
                   display: { xs: 'block', md: 'none' },
+                  // width:'100%'
                 }}
+                
               >
                 {bookmarks.map((page, index) => (
+                  // <>
+                  /* { index!==0 && <Divider />} */
                   <MenuItem 
+                  sx={{ padding:3}}
                   key={page} 
                   onClick={handleCloseNavMenu}
+                  divider={index!==bookmarks.length-1 ? true:false}
                   >
                     <Typography textAlign="center">
                         <Link passHref href={'#'+page}>
@@ -124,6 +143,8 @@ const Header = () => {
                         </Link>
                     </Typography>
                   </MenuItem>
+                  //  </>
+
                 ))}
               </Menu>
             </Box>
@@ -162,6 +183,8 @@ const Header = () => {
         </Container>
       </AppBar>
     </HideOnScroll>
+    </ThemeProvider>
+
   );
 };
 export default Header;
