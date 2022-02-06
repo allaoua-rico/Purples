@@ -3,7 +3,7 @@ import * as React from "react"
 const MongoDB = (props) => (
   <svg
     width={120}
-    height={120}
+    height={100}
     viewBox="0 -183 512 512"
     xmlns="http://www.w3.org/2000/svg"
     {...props}

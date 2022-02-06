@@ -8,9 +8,9 @@
   /* animation-delay: 3s; */
 
   animation: 
-    typing 3.5s steps(40, end) 3s,
-    blink-caret .75s step-end infinite 3s,
-    vis 1s forwards 3s;
+    typing 3s steps(40, end) 7s,
+    blink-caret .75s step-end infinite 7s,
+    vis 1s forwards 7s;
 }
 
 @keyframes vis {
@@ -32,21 +32,22 @@
   50% { border-color: orange; }
 }
 .laptop{
+  width:100%;
   postision: absolute;
   transform: translateX(100vw);
-  animation: 2s move forwards 2s;
+  animation: 2s move forwards 3.5s;
 }
 .topContainer div:nth-child(1){
   transform: translateX(-100vw);
-  animation: 1s move forwards;
+  animation: 1.5s move forwards;
 }
 .topContainer div:nth-child(2){
   transform: translateX(-100vw);
-  animation:1s move forwards 0.75s;
+  animation:1.5s move forwards 1s;
 }
 .topContainer div:nth-child(3){
   transform: translateX(-100vw);
-  animation:1s move forwards 1.5s;
+  animation:2s move forwards 2s;
 }
 
 @keyframes move {
@@ -58,11 +59,11 @@
 }
 }
 .screen{
-  animation:bootUp 3s forwards 
+  animation: 2s bootUp  forwards  6s ;
 }
 @keyframes bootUp {
   from { fill:initial; }
-  50%{ fill:initial;}
+  /* 50%{ fill:initial;} */
   to { fill:white;}
 }
 .text{

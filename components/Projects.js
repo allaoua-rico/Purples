@@ -5,7 +5,7 @@ import styles from '../styles/Projects.module.css'
 
 export default function Projects() {
     return (
-    <div className='flex flex-col justify-center gap-y-5 items-center pt-6 text-white w-fit rounded-xl' style={{background:'#5E93AD'}}>
+    <div className='flex flex-col justify-center gap-y-5 items-center pt-6 text-white w-screen lg:w-auto rounded-xl' style={{background:'#5E93AD'}}>
         <h2 className={styles.title}>Projects</h2>
         <div  className='max-w-4xl flex flex-col justify-center items-center gap-y-5'>
             <div className={styles.card  }>

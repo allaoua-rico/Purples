@@ -3,8 +3,11 @@ import SwipeableViews from 'react-swipeable-views';
 import MobileStepper from '@mui/material/MobileStepper';
 import { useTheme } from '@mui/material/styles';
 import styles from '../styles/Svg.module.css'
-
+import { Button } from '@mui/material';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 export default function Carousel({hidden=false,array}) {
+
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   // const [productReturned, setProductReturned]= useState()
@@ -20,7 +23,31 @@ export default function Carousel({hidden=false,array}) {
       setActiveStep(step);
     };
   return (
-    <div className={"w-96  "+ (hidden ? "sm:hidden": "")}>
+    <div className={"w-full relative flex flex-col justify-center "+ (hidden ? "sm:hidden": "")}>
+                  <div className="flex w-full justify-between absolute ">
+                <Button  
+                    sx={{zIndex:10}}
+                    onClick={handleBack}
+                    disabled={activeStep === 0}>
+                    {theme.direction === 'rtl' ? (
+                    <ArrowForwardIosIcon/>
+                    ) : (
+                    <ArrowBackIosIcon  />
+                    )}
+                    
+                </Button>
+                <Button
+                    sx={{zIndex:10}}
+                    onClick={handleNext}
+                    disabled={activeStep === array?.length - 1}
+                >
+                    {theme.direction === 'rtl' ? (
+                    <ArrowBackIosIcon />
+                    ) : (
+                    <ArrowForwardIosIcon />
+                    )}
+                </Button>
+            </div>
           <SwipeableViews
           axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
           index={activeStep}
@@ -29,15 +56,17 @@ export default function Carousel({hidden=false,array}) {
           resistance
           slideStyle={
               {
-              overflow:'hidden',
+                // zIndex:20,
+              overflow:"hidden",
               width:"100%",
               display:"flex",
-              justifyContent: 'center'
+              justifyContent: 'center',
+              // backgroundColor:'black'
               }}
           >
               {array.map(({name,component},index)=>{
                 return(
-                  <div key={index} className='flex flex-col text-3xl justify-center p-5 items-center gap-y-4'>
+                  <div key={index} className={` w-full flex flex-col text-3xl justify-center py-5 items-center gap-y-4`}>
                     <h3>{name}</h3>
                     <div className={styles.svg_big}>
                     {component}
