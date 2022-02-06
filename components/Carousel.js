@@ -34,7 +34,6 @@ export default function Carousel({hidden=false,array}) {
                     ) : (
                     <ArrowBackIosIcon  />
                     )}
-                    
                 </Button>
                 <Button
                     sx={{zIndex:10}}
