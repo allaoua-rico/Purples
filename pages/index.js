@@ -25,8 +25,11 @@ export default function Home() {
     <div className='w-full flex flex-col items-center'>
       
       <Top />
-      <hr id="tech" className='h-3 w-20 rounded-lg bg-gray-300 mb-12 mt-40 mx-auto '/>
-      <Technologies/>
+      <FadeInSection>
+        <hr id="tech" className='h-3 w-20 rounded-lg bg-gray-300 mb-12 mt-40 mx-auto '/>
+        <Technologies/>
+      </FadeInSection>
+
       <FadeInSection>
         <hr id="projects" className='h-3 w-20 rounded-lg bg-gray-300 mb-12 mt-40 mx-auto'/>
         <Projects/>
