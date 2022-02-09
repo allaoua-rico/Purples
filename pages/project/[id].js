@@ -79,7 +79,7 @@ export default function Project({data}) {
             </div>
             <div className={"mt-10"}>
               <h2 className='font-bold text-center text-black text-3xl '>Back-End</h2>
-              <Carousel hidden={true} hidden={true} array={back} />
+              <Carousel hidden={true}  array={back} />
               <TechCard projectPage={true} array={filteredBack}/>
             </div>
 
