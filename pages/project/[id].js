@@ -5,6 +5,7 @@ import {front,back} from '../../public/data/techData.js'
 import TechCard from '../../components/TechCard.js';
 import styles from '../../styles/Fullhouse.module.css'
 import Link from 'next/link';
+import Carousel from '../../components/Carousel';
 
 // import { Stack } from "@mui/material";
 
@@ -49,35 +50,37 @@ export default function Project({data}) {
   })
 
   return (
-    <div className={styles.fullhouse}>
-      <div className=' flex '>
-      <div className='basis-1/2  bg-white flex flex-col justify-center'>
+    <div className={''}>
+      <div className='flex'>
+      <div className='basis-1/2  bg-white sm:flex hidden flex-col justify-center'>
         <img className='m-3' src={data.imgs[0]} alt="" />
       </div>
-   <div className='basis-1/2  '>
-   <div >
-        <div className={styles.container} >
-          <div className='flex flex-col justify-around h-full'>
-            <h1 className={styles.title}> {data.title}</h1>
-            
-            <p className={styles.description}>{data.description}</p>
-            <ul className='list-disc mb-14'>
-            {data.fctList.map((fct,index)=>{
-            return(
-                <li key={index}>
-                  {fct}
-                </li>)
-              })}
-            </ul>
-            <ul className='mb-8'>
-            <h3 className='text-4xl mb-6'>Technologies used</h3>
-            <div className={styles.card}>
-            <TechCard projectPage={true} array={filteredFront}/>
-
+      <div className={`sm:basis-1/2 flex justify-center items-center ${styles.fullhouse}  `}>
+        <div className='mt-8'>
+              <div className={styles.container} >
+                <div className='flex flex-col justify-around h-full'>
+                  <h1 className={`${styles.title} text-black`}> {data.title}</h1>
+                  
+                  <p className={styles.description}>{data.description}</p>
+                  <ul className='list-disc mb-14'>
+                  {data.fctList.map((fct,index)=>{
+                  return(
+                      <li key={index}>
+                        {fct}
+                      </li>)
+                    })}
+                  </ul>
+                  <ul className='mb-8'>
+                  <h3 className='text-4xl mb-6'>Technologies used:</h3>
+                <div className={""}>
+               <h2 className='font-bold text-center text-black text-3xl '>Front-End</h2>
+              <Carousel hidden={true} array={front} />
+              <TechCard hidden={true} projectPage={true} array={filteredFront}/>
             </div>
-            <div className={styles.card}>
+            <div className={"mt-10"}>
+              <h2 className='font-bold text-center text-black text-3xl '>Back-End</h2>
+              <Carousel hidden={true} hidden={true} array={back} />
               <TechCard projectPage={true} array={filteredBack}/>
-
             </div>
 
             </ul>
@@ -94,7 +97,7 @@ export default function Project({data}) {
           </div>
    
 
-              <div className='flex w-full justify-center gap-x-6'>
+              <div className='mb-24 flex w-full justify-center gap-x-6'>
                 <Link passHref href={'https://github.com/allaoua-rico/full-house-heroku'}>
                   <a className="hover:cursor-pointer hover:bg-white bg-neutral-200  font-semibold py-2 px-4 border border-gray-400 rounded shadow">
                             Github
