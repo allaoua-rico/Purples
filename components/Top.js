@@ -8,13 +8,13 @@ export default function Top() {
   return (
   <div className={ " text-white sm:text-6xl text-3xl leading-normal sm:leading-relaxed sm:font-bold font-medium py-10 mt-20 flex flex-col  gap-y-28 lg:flex-row lg:justify-center gap-x-32 lg:w-full overflow-hidden"}>
       <div 
-      className={`mx-auto lg:mx-px pl-4 flex flex-col justify-center ${styles.topContainer}`}
+      className={` mx-auto lg:mx-px pl-4 flex flex-col justify-center ${styles.topContainer}`}
       >
         <div>
         Hello,
         </div> 
         <div>
-        I am Allaoua,
+        I am BOUDRIOU Allaoua,
         </div>  
          <div>
          A 
