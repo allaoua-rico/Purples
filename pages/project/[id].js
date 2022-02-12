@@ -104,7 +104,7 @@ export default function Project({data}) {
                     </a>
                   
                 </Link>
-                <Link passHref href={'https://fullhouse-project.herokuapp.com/'}>
+                <Link passHref href={'https://fullhouse-playground.herokuapp.com/'}>
                 <a className="hover:cursor-pointer hover:bg-white bg-neutral-200 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
                   Live
                 </a>
