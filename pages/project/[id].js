@@ -88,11 +88,11 @@ export default function Project({data}) {
           <div className=' flex flex-col gap-y-4 mb-8 bg-pink-100 p-3 rounded'>
 
             <div className='text-center '>To test the admin functionalities, go to the /login page and use:</div>
-            <div className='flex flex-col items-center'>
+            {/* <div className='flex flex-col items-center'>
               <div>Email : test@gmail.com</div>
               <div>Pasword  
                 : pasword</div>
-            </div>
+            </div> */}
 
           </div>
    
