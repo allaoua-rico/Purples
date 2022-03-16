@@ -33,9 +33,9 @@ export default function Projects() {
                   E-Commerce application made from scratch
                 </div>
                 <ul className="list-disc">
-                  {projectsInfos[0].fctList?.map((el) => {
+                  {projectsInfos[0].fctList?.map((el,index) => {
                     return (
-                      <li className="text-white">
+                      <li key={index+'el'} className="text-white">
                         <div className="text-[#d4d9e8]">{el}</div>
                       </li>
                     );
