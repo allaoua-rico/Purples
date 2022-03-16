@@ -1,6 +1,6 @@
 import * as React from "react"
 
-const SvgComponent = (props) => (
+const Nextjs = (props) => (
   <svg
     height={80}
     preserveAspectRatio="xMidYMid"
@@ -13,4 +13,4 @@ const SvgComponent = (props) => (
   </svg>
 )
 
-export default SvgComponent
+export default Nextjs

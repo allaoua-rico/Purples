@@ -35,10 +35,8 @@ export default function Home() {
         <hr id="contact" className='h-3 w-20 rounded-lg bg-gray-300 mb-12 mt-40 mx-auto'/>
         <Contact/>
       </FadeInSection>
-
     </div>
     <Footer>
-
     </Footer>
     </Layout>
   )

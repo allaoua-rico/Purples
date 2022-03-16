@@ -1,28 +1,28 @@
-export const projectsInfos =[
-    {
-    id: 'fullhouse',
-    title:'Fullhouse Deco',
-    description:"eCommerce application made from scratch with the MERN Stack, it has the following functionalities:",
-    fctList:[
-      "Passport-Jwt security system for admin",
+export const projectsInfos = [
+  {
+    id: "fullhouse",
+    title: "Fullhouse Deco",
+    description:
+      "eCommerce application made from scratch with the MERN Stack, it has the following functionalities:",
+    fctList: [
+      "Fully Responsive",
+      "JWT secured endpoints and user authentication ",
       "Product pagination",
-      "Admin product management",
-      "Images preview with removing distincted images option in the AddProduct and Update pages",
-      "Fully Responsive"
+      "Admin product management (CRUD) with images preview , delete and add options",
+   
     ],
-    techs:[
+    techs: [
       "React Js",
       "Tailwind CSS",
       "Material UI",
       "Node Js",
       "Express Js",
       "MongoDB",
-      "Mongoose"
+      "Mongoose",
     ],
-    imgs:[
-      "/fullhouse_home_page.png",
-
-  ]
-  },{
-    id:'amazon'
-  }];
+    imgs: ["/fullhouse_home_page.png"],
+  },
+  {
+    id: "amazon",
+  },
+];

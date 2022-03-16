@@ -11,8 +11,8 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 .top {
-	background: linear-gradient(-45deg, #a8dadc, #a8dadc,#1d3557,#a8dadc);
-	background-size: 400% 400%;
+	background: linear-gradient(-45deg, #1d3557, #1d3557,#1d3557,#a8dadc);
+	background-size: 300% 300%;
 	animation: gradient 10s ease infinite;
 	height: 100%;
 }

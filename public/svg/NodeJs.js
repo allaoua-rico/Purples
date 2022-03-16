@@ -1,6 +1,6 @@
 import * as React from "react"
 
-const SvgComponent = (props) => (
+const NodeJs = (props) => (
   <svg
     width={80}
     height={80}
@@ -16,4 +16,4 @@ const SvgComponent = (props) => (
   </svg>
 )
 
-export default SvgComponent
+export default NodeJs
