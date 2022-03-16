@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import styles from "../styles/Projects.module.css";
 import { projectsInfos } from "../data";
-import { FiGithub,FiExternalLink } from "react-icons/fi";
+import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 export default function Projects() {
   return (
@@ -51,14 +51,16 @@ export default function Projects() {
                 <div className=" flex w-full justify-end gap-x-6">
                   <Link
                     passHref
-                    href="https://github.com/allaoua-rico/full-house-heroku"
+                    href="https://github.com/allaoua-rico/e-shop/tree/main"
                   >
                     <a>
                       <FiGithub className="w-5 h-5 stroke-[#8B93AD] hover:stroke-[#a8dadc] transition-all duration-300" />
                     </a>
                   </Link>
-                  <Link passHref href={"https://fullhouse-deco.herokuapp.com/"}>
-                    <a><FiExternalLink className='w-5 h-5 stroke-[#8B93AD] hover:stroke-[#a8dadc] transition-all duration-300'/></a>
+                  <Link passHref href={"https://e-shop-allaoua-rico.vercel.app/"}>
+                    <a>
+                      <FiExternalLink className="w-5 h-5 stroke-[#8B93AD] hover:stroke-[#a8dadc] transition-all duration-300" />
+                    </a>
                   </Link>
                 </div>
               </div>
