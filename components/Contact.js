@@ -63,7 +63,7 @@ export const Contact = () => {
       <h2 className={` text-5xl sm:text-6xl`}>Contact Me</h2>
       <form
         noValidate
-        autocomplete="off"
+        autoComplete="off"
         ref={form}
         onSubmit={formik.handleSubmit}
         className=" w-full bg-white text-black my-8 px-2 py-6 rounded-md flex flex-col gap-y-3"
