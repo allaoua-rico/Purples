@@ -1,40 +1,41 @@
-import Image from "next/image";
+// import Image from "next/image";
 import React, { useState } from "react";
 import { front, back } from "../public/data/techData.js";
-import Carousel from "./Carousel.js";
-import styles from "../styles/Home.module.css";
-import TechCard from "./TechCard.js";
+// import Carousel from "./Carousel.js";
+// import styles from "../styles/Home.module.css";
+// import TechCard from "./TechCard.js";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { SiMongodb} from "react-icons/si";
+import useMediaQuery from '@mui/material/useMediaQuery';
+
 
 
 export default function Technologies() {
   const [value, setValue] = useState(0);
-  const [rotate, setRotate] = useState(0);
+  const matches = useMediaQuery('(min-width:768px)');
 
   const handleChange = (event, newValue) => {
-    setRotate(!rotate);
     setValue(newValue);
   };
   return (
-    <div className="flex flex-col items-center gap-y-14 lg:px-0 px-5 w-screen lg:w-full max-w-[700px]">
+    <div className="h-[560px] flex flex-col items-center gap-y-14 lg:px-0 px-5 w-screen lg:w-full max-w-[700px]">
       <div className="flex flex-col items-center gap-y-11">
         <h2 className={` text-5xl sm:text-6xl `}>Technologies</h2>
         <p className="ml-2 mb-4 text-2xl  text-center">
           The technologies i work with are the following:
         </p>
       </div>
-      <div className="flex text-white w-full ">
+      <div className="flex flex-col md:flex-row text-white w-full items-center md:items-start">
         <div className="basis-3/12 ">
           <Tabs
-            orientation="vertical"
+            orientation={matches ? "vertical": 'horizontal'}
             variant="scrollable"
             value={value}
             onChange={handleChange}
-            aria-label="Vertical tabs example"
+            aria-label="technologies tabs"
             sx={{
               borderColor: "#7E869D !important",
               borderRight: "solid 0px ",
@@ -51,7 +52,7 @@ export default function Technologies() {
             <Tab iconPosition="start" icon={front[1].component} label='Front-End'{...a11yProps(0)} />
             <Tab iconPosition="start" icon={back[1].component} label="Server-Side" {...a11yProps(1)} />
             <Tab iconPosition="start" icon={<SiMongodb className="w-6 h-6"/>} label="DataBase" {...a11yProps(2)} />
-            <div className="absolute h-full w-[2px] bg-[#7E869D] opacity-30"></div>
+            <div className={matches ? "absolute h-full w-[2px] bg-[#7E869D] opacity-30":'absolute w-full bottom-0 h-[2px] bg-[#7E869D] opacity-30'}></div>
           </Tabs>
         </div>
         <div className="basis-9/12 ">

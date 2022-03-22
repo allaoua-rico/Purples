@@ -1,1 +1,1 @@
-my name is BOUDRIOU Allaoua, i am a junior MERN stack developer and this is my portfolio.
+My name is BOUDRIOU Allaoua, i am a junior MERN stack developer and this is my portfolio.

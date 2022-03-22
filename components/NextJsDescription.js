@@ -25,7 +25,7 @@ export default function FrontEndDescription({ next }) {
   const open2 = Boolean(anchorEl2);
 
   return (
-    <ul className="list-disc gap-y-2 flex flex-col text-[#BEC6DD]">
+    <ul className="list-disc  gap-y-2 flex flex-col text-[#BEC6DD] ">
       <li>
         Optained my{" "}
         <span
@@ -36,8 +36,10 @@ export default function FrontEndDescription({ next }) {
           Responsive Web Design Certification
         </span>
         <Popover
+          disableScrollLock={true}
           id="mouse-over-popover"
           sx={{
+            maxWidth: "100%",
             pointerEvents: "none",
           }}
           open={open}
@@ -65,6 +67,7 @@ export default function FrontEndDescription({ next }) {
           Javascript Algorithms And Data Structures Certification
         </span>
         <Popover
+          disableScrollLock={true}
           id="mouse-over-popover2"
           sx={{
             pointerEvents: "none",

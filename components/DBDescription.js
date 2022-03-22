@@ -5,7 +5,7 @@ import Mongoose from "../public/svg/Mongoose";
 export default function DBDescription() {
   return(
   <div>
-      <div className="mb-[-25px]">
+      <div className="mb-[-25px] mt-[-40px]">
       Using <MongoDB className='inline mb-2'/> and <Mongoose className='inline mx-[-14px]'/> to:
 
       </div>

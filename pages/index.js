@@ -22,7 +22,7 @@ export default function Home() {
 
       <Header/>
 
-    <div className='w-full flex flex-col items-center'>
+    <div className='w-full flex flex-col items-center overflow-hidden'>
       
       <Top />
       <hr id="tech" className='h-3 w-20 rounded-lg bg-gray-300 mb-12 mt-40 mx-auto '/>

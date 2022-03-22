@@ -1,7 +1,7 @@
 import * as React from "react"
 import styles from "../../styles/Top.module.css"
 
-const SvgComponent = (props) => (
+const Laptop = (props) => (
   <svg
     className={styles.laptop}
     xmlns="http://www.w3.org/2000/svg"
@@ -203,4 +203,4 @@ const SvgComponent = (props) => (
   </svg>
 )
 
-export default SvgComponent
+export default Laptop

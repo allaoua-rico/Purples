@@ -7,7 +7,7 @@ import Nextjs from "../public/svg/Nextjs";
 
 export default function BackEndDescription({ next }) {
   return (
-    <div className=" leading-[1px]">
+    <div className=" leading-[1px]  mt-[-12px]">
       Using{" "}
       <ExpressJS className="animate-pulse inline stroke-white stroke-[5px] fill-white w-[70px] h-auto " />{" "}
       in association with React
