@@ -12,9 +12,7 @@ export default function BackEndDescription({ next }) {
       <ExpressJS className="animate-pulse inline stroke-white stroke-[5px] fill-white w-[70px] h-auto " />{" "}
       in association with React
       <SiReact className=" my-[-5px] mx-2 animate-[spin_4s_linear_infinite] inline w-6 h-auto stroke-white fill-white" />{" "}
-      or the integrated Nodejs{" "}
-      <SiNodedotjs className="fill-white my-[-5px]  stroke-white w-6 h-auto inline mx-1" />{" "}
-      in
+      or 
       <Nextjs className="stroke-white stroke-[5px]  my-[-5px]  fill-white w-12 h-6 mx-1 inline" />
       to:
       <ul className="list-disc gap-y-2 flex flex-col text-[#BEC6DD] leading-relaxed mt-4">
