@@ -16,7 +16,7 @@ export default function Projects() {
 
       <div className="flex flex-row gap-y-5 my-24 relative ">
         <div className="md:basis-2/3 w-full h-full absolute md:static">
-          <Link passHref href={"https://e-shop-allaoua-rico.vercel.app/"}>
+          <Link passHref href={"https://ab-e-shop.herokuapp.com/"}>
             <a className="hover:cursor-pointer relative flex group h-full">
               <img
                 className="rounded-md z-10 object-cover w-full h-full"
