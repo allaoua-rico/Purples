@@ -60,7 +60,7 @@ export default function Projects() {
                   <FiGithub className="w-5 h-5 stroke-[#8B93AD] hover:stroke-[#85E9D9] transition-all duration-300" />
                 </a>
               </Link>
-              <Link passHref href={"https://e-shop-allaoua-rico.vercel.app/"}>
+              <Link passHref href={"https://ab-e-shop.herokuapp.com/"}>
                 <a>
                   <FiExternalLink className="w-5 h-5 stroke-[#8B93AD] hover:stroke-[#85E9D9] transition-all duration-300" />
                 </a>
