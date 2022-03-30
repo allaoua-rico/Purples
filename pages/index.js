@@ -26,10 +26,10 @@ export default function Home() {
       
       <Top />
       <hr id="tech" className='h-3 w-20 rounded-lg bg-gray-300 mb-12 mt-40 mx-auto '/>
-      <Technologies/>
-      <FadeInSection>
-        <hr id="projects" className='h-3 w-20 rounded-lg bg-gray-300 mb-12 mt-40 mx-auto'/>
-        <Projects/>
+      <Technologies />
+      <FadeInSection >
+        <hr id="projects" className='  h-3 w-20 rounded-lg bg-gray-300  mt-40 mx-auto'/>
+        <Projects />
       </FadeInSection>
       <FadeInSection>
         <hr id="contact" className='h-3 w-20 rounded-lg bg-gray-300 mb-12 mt-40 mx-auto'/>
