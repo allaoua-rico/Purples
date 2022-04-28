@@ -29,7 +29,7 @@ export default function Projects() {
         <div className="md:basis-1/3 basis-3/3 flex flex-col md:items-end justify-between p-8  z-30 bg-[#2f4a68] opacity-95 md:opacity-100 md:bg-transparent h-full md:h-auto">
           <div className="flex flex-col md:items-end">
             <h3 className="text-[#85E9D9]">MERN-stack CRUD project</h3>
-            <h3 className="text-2xl ">Norda Clone</h3>
+            <h3 className="text-2xl ">Norda</h3>
           </div>
           <div className="bg-[#2f4a68] opacity-95 p-6 right-0 md:w-[145%] rounded-md pl-9 z-30 w-full">
             <div className="text-white font-semibold">
