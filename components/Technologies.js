@@ -8,14 +8,12 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import { SiMongodb} from "react-icons/si";
-import useMediaQuery from '@mui/material/useMediaQuery';
-
-
+import { SiMongodb } from "react-icons/si";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 export default function Technologies() {
   const [value, setValue] = useState(0);
-  const matches = useMediaQuery('(min-width:768px)');
+  const matches = useMediaQuery("(min-width:768px)");
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -31,7 +29,7 @@ export default function Technologies() {
       <div className="flex flex-col md:flex-row text-white w-full items-center md:items-start">
         <div className="basis-3/12 ">
           <Tabs
-            orientation={matches ? "vertical": 'horizontal'}
+            orientation={matches ? "vertical" : "horizontal"}
             variant="scrollable"
             value={value}
             onChange={handleChange}
@@ -39,7 +37,7 @@ export default function Technologies() {
             sx={{
               borderColor: "#7E869D !important",
               borderRight: "solid 0px ",
-              "& .Mui-selected": { color: "white !important",font:'bold' },
+              "& .Mui-selected": { color: "white !important", font: "bold" },
               "& .MuiTabs-indicator": {
                 bgcolor: "white",
                 width: "2px",
@@ -49,55 +47,49 @@ export default function Technologies() {
               },
             }}
           >
-            <Tab iconPosition="start" icon={front[1].component} label='Front-End'{...a11yProps(0)} />
-            <Tab iconPosition="start" icon={back[1].component} label="Server-Side" {...a11yProps(1)} />
-            <Tab iconPosition="start" icon={<SiMongodb className="w-6 h-6"/>} label="DataBase" {...a11yProps(2)} />
-            <div className={matches ? "absolute h-full w-[2px] bg-[#7E869D] opacity-30":'absolute w-full bottom-0 h-[2px] bg-[#7E869D] opacity-30'}></div>
+            <Tab
+              iconPosition="start"
+              icon={front[1].component}
+              label="Front-End"
+              {...a11yProps(0)}
+            />
+            <Tab
+              iconPosition="start"
+              icon={back[1].component}
+              label="Server-Side"
+              {...a11yProps(1)}
+            />
+            <Tab
+              iconPosition="start"
+              icon={<SiMongodb className="w-6 h-6" />}
+              label="DataBase"
+              {...a11yProps(2)}
+            />
+            <div
+              className={
+                matches
+                  ? "absolute h-full w-[2px] bg-[#7E869D] opacity-30"
+                  : "absolute w-full bottom-0 h-[2px] bg-[#7E869D] opacity-30"
+              }
+            ></div>
           </Tabs>
         </div>
         <div className="basis-9/12 ">
           <TabPanel value={value} index={0}>
-           {front[1].desc}
+            {front[1].desc}
           </TabPanel>
           <TabPanel value={value} index={1}>
-          {back[0].desc}
+            {back[0].desc}
           </TabPanel>
           <TabPanel value={value} index={2}>
-          {back[3].desc}
+            {back[3].desc}
           </TabPanel>
         </div>
       </div>
-
-      {/* <div
-        className="flex flex-col  pt-6 justify-center gap-y-5 items-center w-screen lg:w-auto  rounded-xl bg-white "
-        // style={{background:"#F1FAEE"}}
-      >
-        <div className="w-full flex flex-col justify-center items-center sm:gap-y-20 sm:p-32 py-16  ">
-          <h2 className="font-bold text-center text-black text-3xl ">
-            Front-End
-          </h2>
-          <Carousel hidden={true} array={front} />
-          <TechCard hidden={true} array={front} />
-
-          <h2 className="font-bold text-center text-black text-3xl mt-10">
-            {" "}
-            Back-End
-          </h2>
-          <Carousel hidden={true} array={back} />
-          <TechCard hidden={true} array={back} />
-        </div>
-      </div> */}
-      {/* <Box
-        sx={{
-          flexGrow: 1,
-          bgcolor: "background.paper",
-          display: "flex",
-          height: 224,
-        }}
-      > */}
     </div>
   );
 }
+
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
   return (
@@ -116,6 +108,7 @@ function TabPanel(props) {
     </div>
   );
 }
+
 function a11yProps(index) {
   return {
     id: `vertical-tab-${index}`,

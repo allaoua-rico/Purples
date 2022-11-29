@@ -1,9 +1,8 @@
 export const projectsInfos = [
   {
-    id: "fullhouse",
-    title: "Fullhouse Deco",
-    description:
-      "eCommerce application made from scratch with the MERN Stack, it has the following functionalities:",
+    title: "Norda",
+    subTitle: "MERN-stack CRUD project",
+    description: "E-Commerce application made from scratch",
     fctList: [
       "Fully Responsive",
       "JWT secured endpoints and user authentication via Cookie",
@@ -12,20 +11,50 @@ export const projectsInfos = [
       "Products pagination, filtering and sorting",
       "Admin product management (CRUD) with images preview , delete and add options",
       "RESTfull APIs",
-      "Global error handling with Express"
+      "Global error handling with Express",
     ],
     techs: [
-      "React Js",
-      "Tailwind CSS",
-      "Material UI",
-      "Node Js",
-      "Express Js",
-      "MongoDB",
+      "NextJs",
+      "TailwindCss",
+      "MaterialUI",
+      // "Node Js",
+      "ExpressJs",
+      // "MongoDB",
       "Mongoose",
     ],
-    imgs: ["/fullhouse_home_page.png"],
+    imgs: ["/e-shop2.png"],
+    links: {
+      github: "https://github.com/allaoua-rico/e-shop/tree/main",
+      deployed: "https://ab-e-shop.herokuapp.com/",
+    },
   },
   {
-    id: "amazon",
+    title: "Purples",
+    subTitle: "Front-End",
+    description: "",
+    fctList: [
+      "Fully Responsive suing tailwindCss",
+      "Form validation using formik and yup with error feedback",
+      "Auto-refetch after CUD operations using SWR",
+      "Translation using i18next",
+      "Calendar: appointments displaying, custom actions on click",
+      "Calendar-styling: insert css using styled-components, and create custom component (toobar,event)",
+      "Time formatting and manipulation using momentJs",
+      "Intuitive currency inputs",
+    ],
+    techs: [
+      "ReactJs",
+      "TailwindCss",
+      "MaterialUI",
+      "React Router",
+      "React-big-calendar",
+      "MomentJs",
+      "SWR"
+    ],
+    imgs: ["/purples-1.png"],
+    links: {
+      github: "https://github.com/allaoua-rico/e-shop/tree/main",
+      deployed: "https://mangomint-clone-olive.vercel.app/",
+    },
   },
 ];
